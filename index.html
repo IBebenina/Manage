@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/icons css/iconsfont-embedded.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Manage</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="#">manage</a>
+        <nav class="menu">
+            <a class="menu__item" href="">Calendar</a>
+            <a class="menu__item" href="">Plans</a>
+            <a class="menu__item" href="">To Do</a>
+        </nav>
+    </header>
+    <main>
+        <section class="options">
+            <div class="options__checkbox">
+                <div class="options__checkbox-item">
+                    <input class="options__checkbox-input" type="checkbox" id="today">
+                    <label class="options__checkbox-label" for="today">Today</label>
+                </div>
+                <div class="options__checkbox-item">
+                    <input class="options__checkbox-input" type="checkbox" id="tomorrow">
+                    <label class="options__checkbox-label" for="tomorrow">Tomorrow</label>
+                </div>
+                <div class="options__checkbox-item">
+                    <input class="options__checkbox-input" type="checkbox" id="week">
+                    <label class="options__checkbox-label" for="week">Week</label>
+                </div>
+                <div class="options__checkbox-item">
+                    <input class="options__checkbox-input" type="checkbox" id="month">
+                    <label class="options__checkbox-label" for="month">Month</label>
+                </div>
+            </div>
+            <div class="options__module">
+
+                <select class="options__list" name="All plans" id="">
+                    <option value="All plans" selected>All plans</option>
+                    <option value="Family">Family</option>
+                    <option value="Work">Work</option>
+                    <option value="Study">Study</option>
+                    <option value="Wish">Wish</option>
+                </select>
+
+                <div class="options__switch">
+                    <label>
+                    <input type="radio" name="radio" checked/>
+                    <div class="major">
+                      <p>Major</p>
+                    </div>
+                    </label>
+                    <label>
+                    <input type="radio" name="radio"/>
+                    <div class="minor">
+                      <p>Minor</p>
+                    </div>
+                </label>
+                </div>
+            </div>
+            <div class="options__search-form">
+                <div><i class="icon-search"></i></div>
+                <input type="text" placeholder="Search for plans">
+            </div>
+        </section>
+        <section class="plans-block">
+
+            <article class="plans-block__item plans-block__item--small">
+            </article>
+            <article class="plans-block__item plans-block__item--large">
+                <picture>
+                    <source media="(max-width: 290px)" srcset="./images/cinema290.jpg">
+                    <source media="(max-width: 768px)" srcset="./images/cinema768.jpg">
+                    <source media="(min-width: 769px)" srcset="./images/cinema1440.jpg">
+                    <img src="./images/cinema1440.jpg" alt="cinema">
+                </picture>
+                <div>
+                    <h2>Cinema</h2>
+                    <time class="plans-block__item-date" datetime="2019-05-11">11/05/2019</time>
+                    <time class="plans-block__item-time plans-block__item-time--right" datetime="">7PM</time>
+                </div>
+            </article>
+            <article class="plans-block__item plans-block__item--small">
+                <time class="plans-block__item-time" datetime="">9AM - 10AM</time>
+                <h2>Meeting</h2>
+                <time class="plans-block__item-date" datetime="2019-05-10">10/05/2019</time>
+            </article>
+            <article class="plans-block__item plans-block__item--large">
+                <picture>
+                    <source media="(max-width: 290px)" srcset="./images/coffee290.jpg">
+                    <source media="(max-width: 768px)" srcset="./images/coffee768.jpg">
+                    <source media="(min-width: 769px)" srcset="./images/coffee1440.jpg">
+                    <img src="./images/coffee1440.jpg" alt="a cup of coffee">
+                </picture>
+                <div>
+                    <h2>Coffee with Susan</h2>
+                    <time class="plans-block__item-date" datetime="2019-05-10">10/05/2019</time>
+                    <a href="http://therainforestcafe.co.uk/">http://therainforestcafe.co.uk/</a>
+                </div>
+            </article>
+            <article class="plans-block__item plans-block__item--large">
+                <picture>
+                    <source media="(max-width: 290px)" srcset="./images/sea290.jpg">
+                    <source media="(max-width: 768px)" srcset="./images/sea768.jpg">
+                    <source media="(min-width: 769px)" srcset="./images/sea1440.jpg">
+                    <img src="./images/sea1440.jpg" alt="coast">
+                </picture>
+                <div>
+                    <h2>Vacation</h2>
+                    <time class="plans-block__item-date" datetime="2019-05-10">10/05/2019</time>
+                </div>
+            </article>
+            <article class="plans-block__item plans-block__item--small">
+                <time class="plans-block__item-time" datetime="">7PM - 8PM</time>
+                <h2>Doctor</h2>
+                <time class="plans-block__item-date" datetime="2019-05-11">11/05/2019</time>
+            </article>
+            <article class="plans-block__item plans-block__item--large">
+                <picture>
+                    <source media="(max-width: 290px)" srcset="./images/dinner290.jpg">
+                    <source media="(max-width: 768px)" srcset="./images/dinner768.jpg">
+                    <source media="(min-width: 769px)" srcset="./images/dinner1440.jpg">
+                    <img src="./images/dinner1440.jpg" alt="family dinner">
+                </picture>
+                <div>
+                    <h2>Family dinner</h2>
+                    <time class="plans-block__item-date" datetime="2019-12-11">11/12/2019</time>
+                </div>
+            </article>
+            <article class="plans-block__item plans-block__item--small">
+                <time class="plans-block__item-time" datetime="">4PM - 5PM</time>
+                <h2>Massage</h2>
+                <time class="plans-block__item-date" datetime="2019-08-11">11/08/2019</time>
+            </article>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="logo" href="#">manage</a>
+        <nav class="footer__menu">
+            <a class="footer__menu-item" href="">Calendar</a>
+            <a class="footer__menu-item" href="">Plans</a>
+            <a class="footer__menu-item" href="">To Do</a>
+        </nav>
+        <div class="social-media">
+            <a class="social-media__item" href=""><i class="icon-instagram"></i></a>
+            <a class="social-media__item" href=""><i class="icon-facebook"></i></a>
+            <a class="social-media__item" href=""><i class="icon-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
+</div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@mixin menu-style {
+    font-weight: 700;
+    font-size: $primary-font-size;
+    color: #fff;
+}
+
+@mixin pseudo-icon {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    background-color: #FDFDFD;
+    top: 45%;
+    left: 45%;
+}
+
+@mixin switch-box($bg-color) {
+    width: 79px;
+    height: 32px;
+    background-color: $bg-color;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+@mixin switch-box290($bg-color) {
+    width: 66px;
+    height: 32px;
+    background-color: $bg-color;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}

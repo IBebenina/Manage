@@ -1,0 +1,22 @@
+.menu {
+    align-self: center;
+    &__item {
+        position: relative;
+        @include menu-style;
+        &:not(:last-of-type) {
+            margin-right: 103px;
+        }
+        &:nth-of-type(2)::after {
+            content: "";
+            position: absolute;
+            width: 43px;
+            height: 2px;
+            background-color: #fff;
+            top: 20px;
+            right: -1px;
+        }
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.plans-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .82fr 1fr;
+    gap: 30px;
+    padding: 50px 150px 119px 149px;
+    background-color: $primary-color;
+    color: $text-color;
+    &__item {
+        background-color: #FDFDFD;
+        picture {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &:first-of-type {
+            border: 2px solid #FDFDFD;
+            background-color: transparent;
+            position: relative;
+            grid-area: 1 / 1 / 2 / 2;
+            &::before {
+                @include pseudo-icon;
+            }
+            &::after {
+                @include pseudo-icon;
+                transform: rotate(90deg);
+            }
+        }
+        &:nth-of-type(2) {
+            grid-area: 1 / 2 / 3 / 3;
+        }
+        &:nth-of-type(3) {
+            grid-area: 1 / 3 / 2 / 4;
+            background-color: $secondary-color;
+        }
+        &:nth-of-type(4) {
+            grid-area: 1 / 4 / 3 / 5;
+            div a {
+                display: inline-block;
+                margin-top: 57px;
+                color: $text-color;
+            }
+        }
+        &:nth-of-type(5) {
+            grid-area: 2 / 1 / 4 / 2;
+        }
+        &:nth-of-type(6) {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+        &:nth-of-type(7) {
+            grid-area: 2 / 3 / 4 / 4;
+        }
+        &-time {
+            font-weight: 700;
+            font-size: $secondary-font-size;
+            &--right {
+                color: $tint-color;
+                font-weight: 500;
+                font-size: $primary-font-size;
+            }
+        }
+        h2 {
+            font-weight: 500;
+            font-size: $secondary-font-size;
+            margin-bottom: 12px;
+        }
+        &-date {
+            color: $tint-color;
+        }
+        &--small {
+            padding: 30px 20px 20px;
+            h2 {
+                margin-top: 46px;
+            }
+        }
+        &--large {
+            div {
+                margin: 20px;
+            }
+        }
+        &:last-of-type {
+            grid-area: 3 / 4 / 4 / 5;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .plans-block__item:nth-of-type(4) {
+        div a {
+            word-break: break-all;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .plans-block {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .plans-block {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        &__item {
+            &:nth-of-type(2) {
+                grid-area: 4 / 1 / 6 / 2;
+            }
+            &:nth-of-type(3) {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            &:nth-of-type(4) {
+                grid-area: 1 / 3 / 3 / 4;
+            }
+            &:nth-of-type(6) {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            &:nth-of-type(7) {
+                grid-area: 3 / 2 / 5 / 3;
+            }
+            &:last-of-type {
+                grid-area: 3 / 3 / 4 / 4;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .plans-block {
+        padding: 30px 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .plans-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        &__item {
+            &:first-of-type {
+                grid-area: auto;
+            }
+            &:nth-of-type(2) {
+                grid-area: auto;
+            }
+            &:nth-of-type(3) {
+                grid-area: auto;
+            }
+            &:nth-of-type(4) {
+                grid-area: auto;
+            }
+            &:nth-of-type(5) {
+                grid-area: auto;
+            }
+            &:nth-of-type(6) {
+                grid-area: auto;
+            }
+            &:nth-of-type(7) {
+                grid-area: auto;
+            }
+            &:last-of-type {
+                grid-area: auto;
+            }
+        }
+    }
+}

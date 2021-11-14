@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/iconsfont.eot');
+    src: url('../fonts/iconsfont.woff2') format('woff2'), url('../fonts/iconsfont.woff') format('woff'), url('../fonts/iconsfont.ttf') format('truetype'), url('../fonts/iconsfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: $primary-font-size;
+}
+
+a {
+    text-decoration: none;
+}
